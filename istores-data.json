@@ -1,0 +1,90 @@
+{
+  "format": "istores-reklamacie-data",
+  "appId": "istores-reklamacie-navigator",
+  "signature": "ISTORES-NAV-JSON",
+  "passwordChecksum": "1gf0-382z-5r2q",
+  "nodes": [
+    {
+      "id": "root",
+      "parentId": null,
+      "title": "Začiatok",
+      "description": "Vyberte hlavnú oblasť, s ktorou zákazník prišiel na predajňu.",
+      "final": false,
+      "finalText": "",
+      "order": 1,
+      "icon": "default"
+    },
+    {
+      "id": "reklamacia",
+      "parentId": "root",
+      "title": "Reklamácia",
+      "description": "Zákazník chce riešiť vadu alebo nefunkčnosť zariadenia.",
+      "final": false,
+      "finalText": "",
+      "order": 1,
+      "icon": "complaint"
+    },
+    {
+      "id": "vratenie",
+      "parentId": "root",
+      "title": "Vrátenie tovaru",
+      "description": "Rieši sa odstúpenie, výmena alebo vrátenie príslušenstva.",
+      "final": false,
+      "finalText": "",
+      "order": 2,
+      "icon": "return"
+    },
+    {
+      "id": "servis",
+      "parentId": "root",
+      "title": "Servis / diagnostika",
+      "description": "Predajňa potrebuje určiť ďalší servisný postup.",
+      "final": false,
+      "finalText": "",
+      "order": 3,
+      "icon": "service"
+    },
+    {
+      "id": "reklamacia_zaruka",
+      "parentId": "reklamacia",
+      "title": "Je zariadenie v záruke?",
+      "description": "Skontrolujte dátum kúpy a typ produktu.",
+      "final": false,
+      "finalText": "",
+      "order": 1,
+      "icon": "warranty"
+    },
+    {
+      "id": "reklamacia_fyzicke",
+      "parentId": "reklamacia",
+      "title": "Je viditeľné mechanické poškodenie?",
+      "description": "Pozrite displej, rám, konektory, oxidáciu a zásah do zariadenia.",
+      "final": false,
+      "finalText": "",
+      "order": 2,
+      "icon": "warning"
+    },
+    {
+      "id": "vratenie_online",
+      "parentId": "vratenie",
+      "title": "Online objednávka do 14 dní",
+      "description": "Odstúpenie od zmluvy pri nákupe na diaľku.",
+      "final": true,
+      "finalText": "Skontrolujte dátum prevzatia, kompletnosť balenia a stav tovaru. Zákazníka navigujte na formulár odstúpenia a interný proces refundácie.",
+      "order": 1,
+      "icon": "return"
+    },
+    {
+      "id": "servis_diag",
+      "parentId": "servis",
+      "title": "Diagnostika pred servisom",
+      "description": "Zariadenie treba najprv otestovať.",
+      "final": true,
+      "finalText": "Prijmite zariadenie na diagnostiku, opíšte závadu čo najpresnejšie a zákazníka informujte o časovom rámci aj možnom poplatku.",
+      "order": 1,
+      "icon": "service"
+    }
+  ],
+  "jsonVersion": "202605181947",
+  "appVersion": "1"
+}
